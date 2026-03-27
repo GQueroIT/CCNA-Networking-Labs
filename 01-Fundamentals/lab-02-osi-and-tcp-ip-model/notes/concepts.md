@@ -25,10 +25,10 @@ The application layer is where user interaction occurs. Protocols such as HTTP o
 
 The TCP/IP model simplifies networking into four layers and maps directly to the OSI model.
 
-- Application Layer → OSI Layers 5–7  
-- Transport Layer → OSI Layer 4  
-- Internet Layer → OSI Layer 3  
-- Network Access Layer → OSI Layers 1–2  
+- Application Layer → OSI Layers 5–7
+- Transport Layer → OSI Layer 4
+- Internet Layer → OSI Layer 3
+- Network Access Layer → OSI Layers 1–2
 
 ---
 
@@ -48,9 +48,9 @@ ICMP is used to test connectivity between devices. It operates at the network la
 
 TCP is a connection-oriented protocol that ensures reliable data delivery. It uses a three-way handshake to establish communication:
 
-- SYN  
-- SYN-ACK  
-- ACK  
+- SYN
+- SYN-ACK
+- ACK
 
 ---
 
@@ -64,11 +64,11 @@ HTTP operates at the application layer and uses TCP (port 80) to send and receiv
 
 During this lab, I observed the following sequence:
 
-1. ARP request is sent to resolve the destination MAC address  
-2. ARP reply is received  
-3. ICMP is used to verify connectivity  
-4. TCP handshake establishes a connection  
-5. HTTP request and response completes communication  
+1. ARP request is sent to resolve the destination MAC address
+2. ARP reply is received
+3. ICMP is used to verify connectivity
+4. TCP handshake establishes a connection
+5. HTTP request and response completes communication
 
 ---
 

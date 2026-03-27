@@ -17,9 +17,9 @@ The goal was to build a deeper understanding of encapsulation, protocol interact
 ---
 
 ## Topology
-- 2 PCs  
-- 1 Switch (Cisco 2960)  
-- 1 Server (HTTP enabled)  
+- 2 PCs
+- 1 Switch (Cisco 2960)
+- 1 Server (HTTP enabled)
 
 Topology file located in `/topology`.
 
@@ -45,9 +45,9 @@ Validated connectivity and observed packet flow between devices.
 
 ### TCP (Transmission Control Protocol)
 Analyzed the three-way handshake process:
-- SYN  
-- SYN-ACK  
-- ACK  
+- SYN
+- SYN-ACK
+- ACK
 
 ### HTTP (Hypertext Transfer Protocol)
 Captured request and response communication between client and server.
@@ -68,23 +68,32 @@ Incoming traffic was processed in reverse order at the destination device.
 
 ## Evidence
 All screenshots and packet analysis are located in `/evidence`, including:
-- ARP request and response  
-- ICMP packet flow  
-- TCP handshake  
-- HTTP communication  
+- ARP request and response
+- ICMP packet flow
+- TCP handshake
+- HTTP communication
 
 ---
 
 ## Troubleshooting
-Basic connectivity validation was performed using ping and simulation mode analysis.
+Basic connectivity validation was performed using ping and simulation mode analysis. Additional troubleshooting notes are documented in `/troubleshooting/troubleshooting.md`.
 
 ---
 
-## Key Takeaways
-- ARP operates at Layer 2 but enables Layer 3 communication  
-- TCP ensures reliable delivery through session establishment  
-- Understanding packet flow is critical for troubleshooting  
-- Simulation mode provides visibility into real network behavior  
+## Key Observations
+- ARP operates at Layer 2 to resolve MAC addresses before communication begins
+- TCP establishes reliable communication using a three-way handshake
+- HTTP operates at the Application Layer and depends on lower-layer protocols
+- Packet Tracer Simulation Mode provides visibility into encapsulation and protocol flow
+
+---
+
+## Skills Demonstrated
+- OSI model understanding
+- TCP/IP model mapping
+- Packet-level analysis
+- Protocol interaction (ARP, TCP, HTTP)
+- Network troubleshooting using simulation tools
 
 ---
 
