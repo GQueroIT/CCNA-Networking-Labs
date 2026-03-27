@@ -10,11 +10,19 @@ Initial communication between devices did not fully complete during early simula
 
 
 
+---
+
+
+
 \## Analysis
 
 
 
-While basic connectivity appeared functional, deeper inspection using Packet Tracer Simulation Mode revealed incomplete protocol interactions, particularly during ARP resolution and TCP session establishment.
+Basic connectivity seemed fine, but when I switched to Simulation Mode, I noticed issues during ARP resolution and TCP session setup.
+
+
+
+---
 
 
 
@@ -22,23 +30,27 @@ While basic connectivity appeared functional, deeper inspection using Packet Tra
 
 
 
-\- Verified IP addressing on all devices
+\- Verified IP addressing on all devices  
 
-\- Confirmed both PCs were within the same subnet
+\- Confirmed both PCs were in the same subnet  
 
-\- Checked server configuration
+\- Checked server configuration  
 
-\- Enabled HTTP service on the server
+\- Enabled HTTP service  
 
-\- Used ICMP (ping) to confirm Layer 3 connectivity
+\- Used ping to confirm connectivity  
 
 \- Observed packet flow in Simulation Mode:
 
-&nbsp; - ARP request and reply
+&nbsp; - ARP request and reply  
 
-&nbsp; - TCP three-way handshake (SYN, SYN-ACK, ACK)
+&nbsp; - TCP handshake (SYN, SYN-ACK, ACK)  
 
-&nbsp; - HTTP request and response
+&nbsp; - HTTP request and response  
+
+
+
+---
 
 
 
@@ -46,13 +58,17 @@ While basic connectivity appeared functional, deeper inspection using Packet Tra
 
 
 
-After validating device configurations and confirming proper protocol sequencing, full communication was successfully established between devices.
+After correcting the configuration and verifying each step, communication completed successfully.
 
 
 
-\## Key Takeaway
+---
 
 
 
-Simulation Mode is critical for understanding how protocols interact across layers, especially when troubleshooting connectivity beyond simple ping tests.
+\## Takeaway
+
+
+
+Simulation Mode makes a big difference. It shows what’s actually happening, not just whether something works.
 

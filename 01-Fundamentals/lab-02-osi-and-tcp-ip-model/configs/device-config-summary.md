@@ -2,35 +2,63 @@
 
 
 
-\## Overview
+\## What was actually configured
 
 
 
-This lab did not require manual CLI configuration. All devices were configured using default or GUI-based settings within Cisco Packet Tracer.
+This lab didn’t require any CLI configuration. Everything was done using basic settings inside Packet Tracer.
 
 
 
-\## Devices
+\- PCs were assigned static IP addresses  
+
+\- Server had HTTP enabled  
 
 
 
-\- PCs configured with static IP addresses
-
-\- Server configured with HTTP service enabled
+---
 
 
 
-\## Purpose
+\## Why there isn’t much config here
 
 
 
-This lab focused on observing protocol behavior such as ARP, TCP, and HTTP rather than router or switch CLI configuration.
+This lab wasn’t about configuring devices. It was about understanding how traffic moves and how protocols interact.
 
 
 
-\## Key Takeaway
+Instead of focusing on CLI work, I used Simulation Mode to watch what was happening step-by-step.
 
 
 
-Not all networking labs require CLI configuration, but documenting the configuration context keeps the repository structure consistent and professional.
+---
+
+
+
+\## What mattered more in this lab
+
+
+
+\- ARP resolving MAC addresses before communication starts  
+
+\- TCP establishing a connection (three-way handshake)  
+
+\- HTTP relying on everything underneath it  
+
+
+
+---
+
+
+
+\## Takeaway
+
+
+
+Even without heavy configuration, this lab was important because it showed how communication actually works.
+
+
+
+Not every lab is about typing commands — sometimes it’s about understanding what’s happening under the hood.
 
