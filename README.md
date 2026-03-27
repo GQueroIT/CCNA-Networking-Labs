@@ -1,5 +1,4 @@
 # CCNA-Networking-Labs
-# CCNA-Networking-Labs
 
 A structured hands-on networking lab portfolio built in Cisco Packet Tracer as I continue progressing through CCNA-level concepts and real troubleshooting practice.
 
