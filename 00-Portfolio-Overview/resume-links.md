@@ -30,7 +30,7 @@ This page is here to hold my professional links in one place so the portfolio co
 
 
 
-\- - [Download Resume (PDF)](https://raw.githubusercontent.com/GQueroIT/CCNA-Networking-Labs/main/90-Assets/resume/Gabriel_Quero_HelpDesk_Resume_Updated.pdf)
+\- [![Download Resume](https://img.shields.io/badge/Download%20Resume-PDF-blue?style=for-the-badge)](https://raw.githubusercontent.com/GQueroIT/CCNA-Networking-Labs/main/90-Assets/resume/Gabriel_Quero_HelpDesk_Resume_Updated.pdf)
 
 
 
