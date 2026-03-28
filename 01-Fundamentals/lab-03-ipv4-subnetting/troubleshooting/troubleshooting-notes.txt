@@ -1,11 +1,59 @@
-No major troubleshooting issues occurred during this lab.
+# Troubleshooting
 
-Validation steps completed:
-- Verified router interfaces were active
-- Confirmed correct /27 subnet mask assignment
-- Confirmed each PC used the correct default gateway
-- Tested successful connectivity to gateway addresses
-- Tested successful inter-LAN connectivity across all configured subnets
+## Issue Observed
 
-Main lesson:
-If connectivity had failed, the first things to verify would be interface status, IP addressing, subnet mask, and default gateway configuration.
+No major connectivity issues were encountered during this lab.
+
+All devices were able to communicate successfully after configuration.
+
+---
+
+## Validation and Testing
+
+The following validation steps were performed to confirm correct network operation:
+
+- Verified all router interfaces were up and active
+- Confirmed correct /27 subnet mask assignment across all devices
+- Ensured each PC was configured with the correct default gateway
+- Tested successful connectivity to gateway addresses using ping
+- Verified inter-LAN communication across all configured subnets
+
+---
+
+## Analysis
+
+Although no errors occurred, validation was important to ensure that:
+
+- Subnet boundaries were correctly applied
+- IP addressing matched the designed subnet ranges
+- Routing between subnets functioned as expected
+
+This step reinforced the importance of verification even when no issues are immediately visible.
+
+---
+
+## Resolution
+
+No fixes were required.
+
+All configurations worked as intended and passed connectivity testing.
+
+---
+
+## Preventative Insight
+
+If connectivity issues had occurred, the following areas would have been checked first:
+
+- Interface status (up/down)
+- IP addressing accuracy
+- Subnet mask consistency
+- Default gateway configuration
+- Routing between subnets
+
+---
+
+## Takeaway
+
+Even when a lab completes successfully, structured validation is essential.
+
+Consistently verifying configurations helps prevent hidden issues and builds strong troubleshooting habits for real-world networking environments.
