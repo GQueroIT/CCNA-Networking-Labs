@@ -1,6 +1,6 @@
 # CCNA-Networking-Labs
 
-A structured hands-on networking lab portfolio built in Cisco Packet Tracer as I continue progressing through CCNA-level concepts and real troubleshooting practice.
+Hands-on networking lab portfolio focused on Cisco fundamentals, subnetting, and real-world configuration practice using Packet Tracer.
 
 This repository is organized to reflect practical skill-building, clean documentation, and proof of work through lab files, notes, topology references, troubleshooting steps, and supporting evidence.
 
