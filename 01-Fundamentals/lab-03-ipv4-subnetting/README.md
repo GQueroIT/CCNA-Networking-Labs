@@ -21,7 +21,7 @@ The goal was to reinforce subnetting concepts and validate communication between
 - 3 LANs (A,B,C)
 - 6 PCs (2 per subnet)
 ### Network Topology
-![Network Topology](./screenshots/step-01-topology/Successful%20Topology%20Scheme.png)
+![Network Topology](./evidence/step-01-topology/Successful%20Topology%20Scheme.png)
 
 ---
 
@@ -49,7 +49,7 @@ Router configuration is available in `/configs`.
 ## Verification
 
 ### Interface Status
-![show ip interface brief](./screenshots/step-03-show-ip-int-brief/IP%20Interface%20Brief%20Command%20Router.png)
+![show ip interface brief](./evidence/step-03-show-ip-int-brief/IP%20Interface%20Brief%20Command%20Router.png)
 Verified using:
 
 ### Connectivity Tests
@@ -57,13 +57,13 @@ Verified using:
 - Successful communication between all LANs (A ↔ B ↔ C)
 
 #### LAN A to Gateway / General Ping Validation
-![LAN A Ping](./screenshots/step-07-ping-tests/LAN%20A%20Ping.png)
+![LAN A Ping](./evidence/step-07-ping-tests/LAN%20A%20Ping.png)
 
 #### LAN A to LAN B
-![LAN B Ping](./screenshots/step-07-ping-tests/LAN%20B%20Ping.png)
+![LAN B Ping](./evidence/step-07-ping-tests/LAN%20B%20Ping.png)
 
 #### LAN A to LAN C
-![LAN C Ping](./screenshots/step-07-ping-tests/LAN%20C%20Ping.png)
+![LAN C Ping](./evidence/step-07-ping-tests/LAN%20C%20Ping.png)
 
 All inter-LAN routing was confirmed operational.
 
@@ -95,7 +95,7 @@ Troubleshooting notes available in `/troubleshooting`.
 
 ## Files
 - `/configs` → Router configuration
-- `/screenshots` → Step-by-step lab evidence
+- `/evidence` → Step-by-step lab evidence
 - `/topology` → Packet Tracer file
 - `/notes` → Subnetting breakdown
 - `/troubleshooting` → Validation notes
