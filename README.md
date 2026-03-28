@@ -19,6 +19,16 @@ My goal is to keep building stronger fundamentals in switching, routing, service
 
 * * *
 
+## Featured Labs
+
+The following labs are currently the strongest examples of my hands-on networking work in this repository:
+
+- [Lab 01 - IOS Basic Device Configuration](01-Fundamentals/lab-01-ios-basic-device-configuration/README.md)
+- [Lab 02 - OSI & TCP/IP Model Analysis](01-Fundamentals/lab-02-osi-and-tcp-ip-model/README.md)
+- [Lab 03 - IPv4 Subnetting](01-Fundamentals/lab-03-ipv4-subnetting/README.md)
+
+* * *
+
 ## Repository Structure
 
 - `00-Portfolio-Overview/` for lab index, skills matrix, and resume links
