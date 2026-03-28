@@ -1,11 +1,51 @@
-Base network: 192.168.10.0/24
+# IPv4 Subnetting Notes
 
-Subnet mask used: /27 (255.255.255.224)
+## Base Network
 
-Subnets created:
-192.168.10.0/27
-192.168.10.32/27
-192.168.10.64/27
+The original network used in this lab:
 
-Key takeaway:
-This lab reinforced subnet boundaries, usable host ranges, broadcast addresses, default gateways, and routing between multiple LANs.
+- Network: 192.168.10.0/24
+
+---
+
+## Subnetting Strategy
+
+The network was subnetted using a /27 prefix:
+
+- Subnet mask: 255.255.255.224
+- Number of subnets created: 8
+- Hosts per subnet: 30 usable addresses
+
+This allowed the network to be divided into smaller, manageable segments.
+
+---
+
+## Subnets Used in This Lab
+
+The following subnets were implemented:
+
+- 192.168.10.0/27
+- 192.168.10.32/27
+- 192.168.10.64/27
+
+Each subnet was assigned to a different router interface to enable communication between separate LAN segments.
+
+---
+
+## Key Concepts Reinforced
+
+This lab reinforced the following networking concepts:
+
+- Understanding subnet boundaries
+- Calculating usable host ranges
+- Identifying network and broadcast addresses
+- Assigning default gateways
+- Segmenting networks for better organization and scalability
+
+---
+
+## Takeaway
+
+Subnetting is essential for organizing networks and controlling traffic flow.
+
+Breaking a larger network into smaller subnets improves efficiency, simplifies troubleshooting, and supports scalable network design.
