@@ -1,6 +1,11 @@
 # CCNA-Networking-Labs
 
-Hands-on networking lab portfolio focused on Cisco fundamentals, subnetting, and real-world configuration practice using Packet Tracer.
+Hands-on networking lab portfolio focused on Cisco fundamentals, subnetting, routing, switching, troubleshooting, and clean technical documentation using Cisco Packet Tracer.
+
+![Status](https://img.shields.io/badge/Portfolio-Active-success)
+![Focus](https://img.shields.io/badge/Focus-Networking-blue)
+![Labs](https://img.shields.io/badge/Labs-Documented-informational)
+![Platform](https://img.shields.io/badge/Platform-Cisco%20Packet%20Tracer-lightgrey)
 
 This repository is organized to reflect practical skill-building, clean documentation, and proof of work through lab files, notes, topology references, troubleshooting steps, and supporting evidence.
 
