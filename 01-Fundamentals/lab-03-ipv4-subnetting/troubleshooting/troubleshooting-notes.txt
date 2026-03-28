@@ -1,0 +1,11 @@
+No major troubleshooting issues occurred during this lab.
+
+Validation steps completed:
+- Verified router interfaces were active
+- Confirmed correct /27 subnet mask assignment
+- Confirmed each PC used the correct default gateway
+- Tested successful connectivity to gateway addresses
+- Tested successful inter-LAN connectivity across all configured subnets
+
+Main lesson:
+If connectivity had failed, the first things to verify would be interface status, IP addressing, subnet mask, and default gateway configuration.

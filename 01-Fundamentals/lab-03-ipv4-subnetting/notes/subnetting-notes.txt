@@ -1,0 +1,11 @@
+Base network: 192.168.10.0/24
+
+Subnet mask used: /27 (255.255.255.224)
+
+Subnets created:
+192.168.10.0/27
+192.168.10.32/27
+192.168.10.64/27
+
+Key takeaway:
+This lab reinforced subnet boundaries, usable host ranges, broadcast addresses, default gateways, and routing between multiple LANs.
