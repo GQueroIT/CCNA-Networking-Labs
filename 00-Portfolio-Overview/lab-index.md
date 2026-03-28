@@ -1,148 +1,70 @@
-\# Lab Index
+# Lab Index
 
+## Objective
 
+This page provides a structured overview of all labs within this repository. It serves as a quick reference to track progress, identify completed work, and outline upcoming labs as I continue developing my networking skills through hands-on practice in Cisco Packet Tracer.
 
-\## Objective
-
-
-
-This page gives a quick overview of the labs I am building throughout this repository as I continue working through networking concepts and hands-on practice in Cisco Packet Tracer.
-
-
-
-The point of this section is to keep the portfolio organized and make it easy to see what has already been completed, what is being worked on, and what is coming next.
-
-
+The goal is to maintain organization, consistency, and clear visibility into my learning progression.
 
 ---
 
+## Fundamentals
 
-
-\## Fundamentals
-
-
-
-| Lab | Status |
-
-|---|---|
-
-| Lab 01 - IOS Basic Device Configuration | Completed |
-
-| Lab 02 - OSI and TCP/IP Model Analysis | Completed |
-
-| Lab 03 - IPv4 Subnetting | Planned |
-
-| Lab 04 - IPv6 Basics | Planned |
-
-
+| Lab | Description | Status |
+|-----|------------|--------|
+| Lab 01 | IOS Basic Device Configuration | Completed |
+| Lab 02 | OSI & TCP/IP Model Analysis | Completed |
+| Lab 03 | IPv4 Subnetting | Completed |
+| Lab 04 | IPv6 Basics | Planned |
 
 ---
 
+## Switching
 
-
-\## Switching
-
-
-
-| Lab | Status |
-
-|---|---|
-
-| Lab 01 - VLAN Configuration | Planned |
-
-| Lab 02 - Trunking | Planned |
-
-| Lab 03 - Spanning Tree Protocol | Planned |
-
-
+| Lab | Description | Status |
+|-----|------------|--------|
+| Lab 01 | VLAN Configuration | Planned |
+| Lab 02 | Trunking | Planned |
+| Lab 03 | Spanning Tree Protocol (STP) | Planned |
 
 ---
 
+## Routing
 
-
-\## Routing
-
-
-
-| Lab | Status |
-
-|---|---|
-
-| Lab 01 - Static Routing | Planned |
-
-| Lab 02 - OSPF | Planned |
-
-| Lab 03 - Inter-VLAN Routing | Planned |
-
-
+| Lab | Description | Status |
+|-----|------------|--------|
+| Lab 01 | Static Routing | Planned |
+| Lab 02 | Default Routing | Planned |
+| Lab 03 | Inter-VLAN Routing | Planned |
 
 ---
 
+## Services
 
-
-\## Services
-
-
-
-| Lab | Status |
-
-|---|---|
-
-| Lab 01 - DHCP | Planned |
-
-| Lab 02 - DNS | Planned |
-
-| Lab 03 - NAT | Planned |
-
-
+| Lab | Description | Status |
+|-----|------------|--------|
+| Lab 01 | DHCP Configuration | Planned |
+| Lab 02 | DNS Configuration | Planned |
+| Lab 03 | NAT (Network Address Translation) | Planned |
 
 ---
 
+## Security
 
-
-\## Security
-
-
-
-| Lab | Status |
-
-|---|---|
-
-| Lab 01 - ACLs | Planned |
-
-| Lab 02 - Port Security | Planned |
-
-| Lab 03 - Basic Device Hardening | Planned |
-
-
+| Lab | Description | Status |
+|-----|------------|--------|
+| Lab 01 | Port Security | Planned |
+| Lab 02 | Access Control Lists (ACLs) | Planned |
+| Lab 03 | Basic Network Hardening | Planned |
 
 ---
 
+## Troubleshooting
 
-
-\## Troubleshooting
-
-
-
-| Lab | Status |
-
-|---|---|
-
-| Lab 01 - Connectivity Troubleshooting | Planned |
-
-| Lab 02 - VLAN Troubleshooting | Planned |
-
-| Lab 03 - Routing Troubleshooting | Planned |
-
-
+| Lab | Description | Status |
+|-----|------------|--------|
+| Lab 01 | Connectivity Troubleshooting | Planned |
+| Lab 02 | VLAN Troubleshooting | Planned |
+| Lab 03 | Routing Troubleshooting | Planned |
 
 ---
-
-
-
-\## Notes
-
-
-
-As this repository keeps growing, this page will serve as the main index so the overall structure stays clean and easy to follow.
-
