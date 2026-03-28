@@ -39,12 +39,17 @@ My goal is to keep building stronger fundamentals in switching, routing, service
 ## Featured Labs
 
 ### Fundamentals
-- [Lab 02 — OSI Model and TCP/IP Suite](./01-Fundamentals/lab-02-osi-model-and-tcp-ip-suite)
-- [Lab 03 — IPv4 Subnetting with Inter-LAN Routing](./01-Fundamentals/lab-03-ipv4-subnetting)
+
+#### Lab 02 — OSI Model and TCP/IP Suite
+[View Lab](./01-Fundamentals/lab-02-osi-and-tcp-ip-model)
+
+#### Lab 03 — IPv4 Subnetting with Inter-LAN Routing
+[View Lab](./01-Fundamentals/lab-03-ipv4-subnetting)
+
+![Subnet Topology](./01-Fundamentals/lab-03-ipv4-subnetting/evidence/step-01-topology/Successful%20Topology%20Scheme.png)
 
 ### Why these labs matter
 These labs show the type of work I want this repository to reflect: clean documentation, Packet Tracer implementation, verification steps, and organized evidence that demonstrates hands-on progress instead of just theory.
-
 * * *
 
 ## Documentation Standard
