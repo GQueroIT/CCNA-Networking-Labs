@@ -1,154 +1,91 @@
-\# Lab 03 – IPv4 Subnetting with Inter-LAN Routing
+# Lab 03 — IPv4 Subnetting with Inter-LAN Routing (Packet Tracer)
 
-
-
-\## Overview
-
+## Objective
 In this lab, I implemented IPv4 subnetting using a /27 subnet mask to divide a /24 network into multiple smaller networks. Each subnet was assigned to a different LAN and connected through a router to allow inter-LAN communication.
 
-
-
-This lab focused on applying subnetting concepts in a real network scenario and validating connectivity between multiple networks.
-
-
+The goal was to reinforce subnetting concepts and validate communication between multiple networks using proper IP addressing and routing.
 
 ---
 
-
-
-\## Objectives
-
-\- Subnet a /24 network into smaller /27 networks
-
-\- Assign IP addresses to router interfaces and end devices
-
-\- Configure default gateways for each LAN
-
-\- Verify connectivity within and across subnets
-
-\- Understand how routing enables inter-LAN communication
-
-
+## Technologies Used
+- Cisco Packet Tracer
+- IPv4 Addressing
+- Subnetting (/27)
+- ICMP (Ping)
+- Routing (Inter-LAN Communication)
 
 ---
 
+## Topology
+- 1 Router (R1)
+- 3 LANs (A, B, C)
+- 3 PCs (one per subnet)
 
-
-\## Topology
-
-The network consists of:
-
-\- 1 Router (R1)
-
-\- 3 LANs (A, B, C)
-
-\- 3 PCs (one per subnet)
-
-
-
-Each LAN is assigned its own subnet and connected to the router via separate interfaces.
-
-
+Topology file located in `/topology`.
 
 ---
 
-
-
-\## IP Addressing Scheme
-
-
+## IP Addressing
 
 | Network | Subnet | Gateway | Host Range |
-
 |--------|--------|--------|-----------|
-
 | LAN A | 192.168.10.0/27 | 192.168.10.1 | .1 - .30 |
-
 | LAN B | 192.168.10.32/27 | 192.168.10.33 | .33 - .62 |
-
 | LAN C | 192.168.10.64/27 | 192.168.10.65 | .65 - .94 |
 
+---
 
+## Configuration
+- Router interfaces were configured with IP addresses from each subnet
+- Each PC was assigned:
+  - IP address within its subnet
+  - Subnet mask (/27)
+  - Default gateway (router interface)
+
+Router configuration is available in `/configs`.
 
 ---
 
+## Verification
 
+### Interface Status
+Verified using:
 
-\## Configuration Summary
+### Connectivity Tests
+- Successful ping to default gateway from each PC
+- Successful communication between all LANs (A ↔ B ↔ C)
 
-\- Router interfaces were assigned IP addresses based on each subnet
-
-\- Each PC was configured with:
-
-&nbsp; - IP address within its subnet
-
-&nbsp; - Subnet mask (/27)
-
-&nbsp; - Default gateway (router interface)
-
-
+All inter-LAN routing was confirmed operational.
 
 ---
 
+## Notes
+Subnetting this /24 network into /27 blocks reinforced:
+- Network boundaries
+- Usable host ranges
+- Broadcast addresses
+- Default gateway placement
 
-
-\## Verification
-
-
-
-\### Interface Status
-
-\- Verified using:
-
-
-
-\### Connectivity Tests
-
-\- Successful ping tests:
-
-&nbsp; - PC → Default Gateway
-
-&nbsp; - PC A → PC B
-
-&nbsp; - PC A → PC C
-
-&nbsp; - PC B → PC C
-
-
-
-All inter-LAN communication was successful.
-
-
+Detailed notes available in `/notes`.
 
 ---
 
+## Troubleshooting
+No major issues encountered during this lab.
 
+Validation included:
+- Verifying interface status
+- Confirming IP addressing and subnet masks
+- Checking default gateway configuration
+- Testing connectivity across all subnets
 
-\## Key Takeaways
-
-\- Subnetting allows efficient use of IP address space
-
-\- Each subnet must have its own network ID and broadcast address
-
-\- Default gateways are required for communication outside the local network
-
-\- Routers enable communication between different subnets
-
-
+Troubleshooting notes available in `/troubleshooting`.
 
 ---
 
-
-
-\## Files Included
-
-\- `/configs` → Router configuration
-
-\- `/screenshots` → Step-by-step lab evidence
-
-\- `/topology` → Packet Tracer file
-
-\- `/notes` → Subnetting breakdown
-
-\- `/troubleshooting` → Validation and troubleshooting steps
-
+## Files
+- `/configs` → Router configuration
+- `/screenshots` → Step-by-step lab evidence
+- `/topology` → Packet Tracer file
+- `/notes` → Subnetting breakdown
+- `/troubleshooting` → Validation notes
