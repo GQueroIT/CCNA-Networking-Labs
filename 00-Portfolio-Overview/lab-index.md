@@ -12,9 +12,9 @@ The goal is to maintain organization, consistency, and clear visibility into my 
 
 | Lab | Description | Status |
 |-----|------------|--------|
-| Lab 01 | IOS Basic Device Configuration | Completed |
-| Lab 02 | OSI & TCP/IP Model Analysis | Completed |
-| Lab 03 | IPv4 Subnetting | Completed |
+| Lab 01 | [IOS Basic Device Configuration](../01-Fundamentals/lab-01-ios-basic-device-config/) | Completed |
+| Lab 02 | [OSI & TCP/IP Model Analysis](../01-Fundamentals/lab-02-osi-and-tcp-ip-model/) | Completed |
+| Lab 03 | [IPv4 Subnetting](../01-Fundamentals/lab-03-ipv4-subnetting/) | Completed |
 | Lab 04 | IPv6 Basics | Planned |
 
 ---
