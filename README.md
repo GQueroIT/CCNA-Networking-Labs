@@ -51,27 +51,6 @@ The following labs are currently the strongest examples of my hands-on networkin
 - Practicing troubleshooting in a structured way
 - Building a portfolio that shows real progress over time
 
-## Featured Labs
-
-### Fundamentals
-
-#### Lab 02 — OSI Model and TCP/IP Suite
-Analysis of packet flow across OSI and TCP/IP layers using Packet Tracer simulation mode.
-
-[View Lab 02 Documentation](./01-Fundamentals/lab-02-osi-and-tcp-ip-model)
-
-#### Lab 03 — IPv4 Subnetting with Inter-LAN Routing
-Subnetting a /24 network into /27 networks with full inter-LAN communication and verification.
-
-[View Lab 03 Documentation](./01-Fundamentals/lab-03-ipv4-subnetting)
-
----
-
-![Subnet Topology](./01-Fundamentals/lab-03-ipv4-subnetting/evidence/step-01-topology/Successful%20Topology%20Scheme.png)
-
-### Why these labs matter
-These labs show the type of work I want this repository to reflect: clean documentation, Packet Tracer implementation, verification steps, and organized evidence that demonstrates hands-on progress instead of just theory.
-
 * * *
 
 ## Documentation Standard
