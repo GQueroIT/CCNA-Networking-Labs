@@ -12,7 +12,7 @@ The goal is to make it easy to move from this repository to my resume, GitHub wo
 
 Main portfolio repository:
 
-[CCNA-Networking-Labs](https://github.com/GQueroIT/CCNA-Networking-Labs)
+[GQueroIT](https://github.com/GQueroIT)
 
 ---
 
