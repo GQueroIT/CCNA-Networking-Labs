@@ -56,6 +56,22 @@ This lab helped reinforce the importance of:
 - Ensuring proper addressing before troubleshooting connectivity
 - Understanding how routers make forwarding decisions in IPv6 networks
 
+---
+
+## Lessons Learned (Mistakes I Made)
+
+During this lab, I ran into multiple issues that forced me to slow down and troubleshoot instead of just moving forward.
+
+- I initially configured IPv6 addresses incorrectly on router interfaces, which caused connectivity failures even though the topology looked correct
+- I assigned overlapping IPv6 networks across interfaces, which broke routing behavior
+- I forgot to enable IPv6 routing (`ipv6 unicast-routing`), which prevented routers from forwarding traffic
+- I assumed routing was the issue before verifying interface status and basic connectivity
+- I had to troubleshoot failed pings step by step instead of jumping to conclusions
+
+Working through these mistakes helped me better understand how IPv6 routing actually behaves in a real environment.
+
+---
+
 ## Key Concepts
 
 - Global Unicast Addressing
