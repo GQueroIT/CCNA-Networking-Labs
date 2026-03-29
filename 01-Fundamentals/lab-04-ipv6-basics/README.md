@@ -25,6 +25,37 @@ PC1 connects to R1, PC2 connects to R2, and both routers are connected via a WAN
 - Cisco IOS CLI
 - Packet Tracer
 
+---
+
+## My Thought Process
+
+While working through this lab, I approached it as a real troubleshooting scenario rather than following a fixed set of steps.
+
+At first, I focused on getting basic IPv6 connectivity between each PC and its default gateway. When that failed, I verified interface status and realized that even with correct addressing, interfaces must be fully up (line protocol up) for communication to work.
+
+After establishing local connectivity, I expanded the topology by introducing a second router. This required me to think about how traffic moves between networks instead of just within a single LAN.
+
+I encountered multiple issues during this process:
+
+- Incorrect IPv6 addressing on router interfaces
+- Overlapping subnets assigned to different interfaces
+- IPv6 routing not enabled on the routers
+- Missing static routes between networks
+
+Instead of restarting, I worked through each issue step by step by:
+
+- Verifying interface configurations using `show ipv6 interface brief`
+- Checking routing tables using `show ipv6 route`
+- Testing connectivity incrementally using ping
+
+Once I enabled IPv6 routing and configured static routes on both routers, I was able to achieve full end-to-end communication between PC1 and PC2.
+
+This lab helped reinforce the importance of:
+
+- Verifying Layer 1/2 before assuming routing issues
+- Ensuring proper addressing before troubleshooting connectivity
+- Understanding how routers make forwarding decisions in IPv6 networks
+
 ## Key Concepts
 
 - Global Unicast Addressing
@@ -43,16 +74,16 @@ PC1 connects to R1, PC2 connects to R2, and both routers are connected via a WAN
 ## Evidence
 
 ### PC1 to Gateway Connectivity
-![PC1 Gateway Ping](evidence/PC1 Ping to Gateway Success.png)
+![PC1 Gateway Ping](evidence/PC1%20Ping%20to%20Gateway%20Success.png)
 
 ### End-to-End Communication (PC1 to PC2)
-![PC1 to PC2](evidence/PC1 to PC2 Communcation.png)
+![PC1 to PC2](evidence/PC1%20to%20PC2%20Communcation.png)
 
 ### Routing Table (R1)
-![R1 Routes](evidence/R1 show route.png)
+![R1 Routes](evidence/R1%20show%20route.png)
 
 ### Routing Table (R2)
-![R2 Routes](evidence/R2 show route.png)
+![R2 Routes](evidence/R2%20show%20route.png)
 
 ---
 
