@@ -40,6 +40,31 @@ PC1 connects to R1, PC2 connects to R2, and both routers are connected via a WAN
 - PC1 and PC2 achieved end-to-end connectivity across routers
 - Routing tables confirmed proper path selection
 
+## Evidence
+
+### PC1 to Gateway Connectivity
+![PC1 Gateway Ping](evidence/PC1 Ping to Gateway Success.png)
+
+### End-to-End Communication (PC1 to PC2)
+![PC1 to PC2](evidence/PC1 to PC2 Communcation.png)
+
+### Routing Table (R1)
+![R1 Routes](evidence/R1 show route.png)
+
+### Routing Table (R2)
+![R2 Routes](evidence/R2 show route.png)
+
+---
+
+## Key Takeaways
+
+- IPv6 routing must be manually enabled using `ipv6 unicast-routing`
+- Routers do not forward IPv6 traffic by default
+- Each interface must be assigned a unique IPv6 subnet
+- Static routes are required for communication between multiple routers
+- Interface status must be verified before troubleshooting routing issues
+- Addressing errors and overlapping networks can prevent connectivity
+
 ## Outcome
 
 This lab successfully demonstrated IPv6 configuration and routing between multiple networks. I also troubleshooted interface issues, addressing conflicts, and routing errors to achieve full connectivity.
