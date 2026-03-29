@@ -12,6 +12,12 @@ In this lab, I configured IPv6 addressing across multiple LANs and implemented i
 
 PC1 connects to R1, PC2 connects to R2, and both routers are connected via a WAN link.
 
+### Network Diagram
+
+<p align="center">
+  <img src="./topology/ipv6-topology.png" alt="IPv6 Topology" width="700">
+</p>
+
 ## IPv6 Addressing Scheme
 
 - LAN 1: 2001:DB8:A:1::/64
@@ -155,6 +161,8 @@ Working through these mistakes helped me better understand how IPv6 routing actu
 
 ### Routing Table (R2)
 ![R2 Routes](evidence/R2%20show%20route.png)
+
+> Note: Topology and troubleshooting screenshots are stored in their respective folders to maintain clean project structure.
 
 ---
 
