@@ -21,6 +21,15 @@ Everything here is built with a focus on:
 
 ---
 
+## Quick Highlights
+
+- Built multi-router IPv6 connectivity and verified end-to-end communication
+- Documented real troubleshooting steps with CLI outputs and screenshots
+- Practiced subnetting using CIDR and VLSM
+- Organized each lab with configs, evidence, topology, notes, and troubleshooting
+
+---
+
 ## Objective
 
 The purpose of this repository is to document my networking progress in a way that is organized, easy to review, and focused on real hands-on work.
@@ -49,14 +58,31 @@ while documenting everything clearly and professionally.
 
 ---
 
+## Technologies Used
+
+- Cisco Packet Tracer
+- Cisco IOS CLI
+- Git and GitHub
+- Linux (Bash)
+- IPv4, IPv6, ICMP
+
+---
+
 ## Featured Labs
 
 These labs represent my strongest hands-on work so far:
 
-- [Lab 01 - IOS Basic Device Configuration](./01-Fundamentals/lab-01-ios-basic-device-configuration)
-- [Lab 02 - OSI & TCP/IP Model Analysis](./01-Fundamentals/lab-02-osi-and-tcp-ip-model)
-- [Lab 03 - IPv4 Subnetting](./01-Fundamentals/lab-03-ipv4-subnetting)
-- [Lab 04 - IPv6 Basics](./01-Fundamentals/lab-04-ipv6-basics)
+- [Lab 01 - IOS Basic Device Configuration](./01-Fundamentals/lab-01-ios-basic-device-configuration)  
+  Built and verified a basic Cisco IOS configuration workflow for foundational device setup.
+
+- [Lab 02 - OSI & TCP/IP Model Analysis](./01-Fundamentals/lab-02-osi-and-tcp-ip-model)  
+  Documented protocol flow and packet movement across the OSI and TCP/IP models.
+
+- [Lab 03 - IPv4 Subnetting](./01-Fundamentals/lab-03-ipv4-subnetting)  
+  Practiced subnetting logic, address planning, and verification across multiple network ranges.
+
+- [Lab 04 - IPv6 Basics](./01-Fundamentals/lab-04-ipv6-basics)  
+  Configured IPv6 addressing, static routing, and verified end-to-end connectivity across routers.
 
 ---
 
@@ -99,6 +125,15 @@ This repository is actively being built as I continue studying for:
 - Future cloud and security certifications
 
 New labs are added regularly with increasing complexity.
+
+---
+
+## Current Focus
+
+- Strengthening networking fundamentals through repeated hands-on labs
+- Improving subnetting speed and accuracy
+- Building cleaner troubleshooting workflows
+- Progressing toward more advanced routing and switching topics
 
 ---
 
