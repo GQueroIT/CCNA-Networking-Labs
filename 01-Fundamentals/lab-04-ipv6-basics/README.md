@@ -80,6 +80,61 @@ Working through these mistakes helped me better understand how IPv6 routing actu
 - Static Routes
 - Interface Configuration
 
+---
+
+## Commands Used
+
+### Router Configuration (R1)
+
+- enable
+- configure terminal
+- hostname R1
+- ipv6 unicast-routing
+
+- interface g0/0
+- ipv6 address 2001:DB8:A:1::1/64
+- no shutdown
+
+- interface g0/1
+- ipv6 address 2001:DB8:A:12::1/64
+- no shutdown
+
+---
+
+### Router Configuration (R2)
+
+- enable
+- configure terminal
+- hostname R2
+- ipv6 unicast-routing
+
+- interface g0/0
+- ipv6 address 2001:DB8:A:2::1/64
+- no shutdown
+
+- interface g0/1
+- ipv6 address 2001:DB8:A:12::2/64
+- no shutdown
+
+### Static Routing
+
+- R1:
+- ipv6 route 2001:DB8:A:2::/64 2001:DB8:A:12::2
+
+- R2:
+- ipv6 route 2001:DB8:A:1::/64 2001:DB8:A:12::1
+
+### Verification Commands
+
+- show ipv6 interface brief
+- show ipv6 route
+- ping 2001:DB8:A:1::1
+- ping 2001:DB8:A:2::1
+- ping 2001:DB8:A:12::1
+- ping 2001:DB8:A:12::2
+
+---
+
 ## Verification
 
 - PC1 successfully pinged its default gateway
