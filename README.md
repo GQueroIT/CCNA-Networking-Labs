@@ -2,77 +2,118 @@
 
 Hands-on networking lab portfolio focused on Cisco fundamentals, subnetting, routing, switching, troubleshooting, and clean technical documentation using Cisco Packet Tracer.
 
-![Status](https://img.shields.io/badge/Portfolio-Active-success)
+![Portfolio](https://img.shields.io/badge/Portfolio-Active-brightgreen)
 ![Focus](https://img.shields.io/badge/Focus-Networking-blue)
-![Labs](https://img.shields.io/badge/Labs-Documented-informational)
+![Labs](https://img.shields.io/badge/Labs-Documented-blue)
 ![Platform](https://img.shields.io/badge/Platform-Cisco%20Packet%20Tracer-lightgrey)
 
-This repository is organized to reflect practical skill-building, clean documentation, and proof of work through lab files, notes, topology references, troubleshooting steps, and supporting evidence.
+---
 
-* * *
+## Overview
+
+This repository documents my progression through networking concepts using real hands-on labs.
+
+Everything here is built with a focus on:
+- Practical configuration (not just theory)
+- Structured troubleshooting
+- Clean, consistent documentation
+- Real proof of work (configs, outputs, screenshots)
+
+---
 
 ## Objective
 
-The purpose of this repository is to document my networking progress in a way that is organized, easy to review, and focused on real hands-on work instead of just theory.
+The purpose of this repository is to document my networking progress in a way that is organized, easy to review, and focused on real hands-on work.
 
-My goal is to keep building stronger fundamentals in switching, routing, services, security, and troubleshooting while documenting everything clearly and professionally.
+My goal is to build strong fundamentals in:
+- Switching
+- Routing
+- Network services
+- Security
+- Troubleshooting
 
-* * *
+while documenting everything clearly and professionally.
+
+---
+
+## Skills Demonstrated
+
+- IPv4 & IPv6 Addressing
+- Subnetting (CIDR, VLSM)
+- Static Routing
+- Network Topology Design
+- CLI Configuration (Cisco IOS)
+- Troubleshooting Methodology
+- Packet Flow Analysis
+- Documentation & Evidence Tracking
+
+---
 
 ## Featured Labs
 
-The following labs are currently the strongest examples of my hands-on networking work in this repository:
+These labs represent my strongest hands-on work so far:
 
-- [Lab 01 - IOS Basic Device Configuration](01-Fundamentals/lab-01-ios-basic-device-configuration/README.md)
-- [Lab 02 - OSI & TCP/IP Model Analysis](01-Fundamentals/lab-02-osi-and-tcp-ip-model/README.md)
-- [Lab 03 - IPv4 Subnetting](01-Fundamentals/lab-03-ipv4-subnetting/README.md)
+- [Lab 01 - IOS Basic Device Configuration](./01-Fundamentals/lab-01-ios-basic-device-configuration)
+- [Lab 02 - OSI & TCP/IP Model Analysis](./01-Fundamentals/lab-02-osi-and-tcp-ip-model)
+- [Lab 03 - IPv4 Subnetting](./01-Fundamentals/lab-03-ipv4-subnetting)
+- [Lab 04 - IPv6 Basics](./01-Fundamentals/lab-04-ipv6-basics)
 
-* * *
+---
 
 ## Repository Structure
 
-- `00-Portfolio-Overview/` for lab index, skills matrix, and resume links
-- `01-Fundamentals/` for core networking concepts and foundational labs
-- `02-Switching/` for switching-focused labs
-- `03-Routing/` for routing-focused labs
-- `04-Services/` for network services labs
-- `05-Security/` for security labs
-- `06-Troubleshooting/` for troubleshooting labs
-- `90-Assets/` for supporting files, diagrams, configs, screenshots, and resume assets
-- `99-Templates/` for reusable templates and structure references
+```text
+CCNA-Networking-Labs/
+│
+├── 01-Fundamentals/
+├── 02-Switching/
+├── 03-Routing/
+├── 04-Services/
+├── 05-Security/
+├── 06-Troubleshooting/
+│
+├── 90-Assets/
+│   ├── configs/
+│   ├── diagrams/
+│   └── screenshots/
+│
+└── 99-Templates/
+```
 
-* * *
+Each lab includes:
+- Objective
+- Topology
+- Addressing
+- Configuration
+- Verification
+- Troubleshooting
+- Evidence
 
-## Current Focus
+---
 
-- Strengthening IPv4 addressing and subnetting
-- Building deeper Cisco CLI familiarity
-- Creating clean lab documentation with verification steps
-- Practicing troubleshooting in a structured way
-- Building a portfolio that shows real progress over time
+## Progression
 
-* * *
+This repository is actively being built as I continue studying for:
+- CCNA (200-301)
+- Network+
+- Future cloud and security certifications
 
-## Documentation Standard
+New labs are added regularly with increasing complexity.
 
-I try to keep each lab organized with the same structure whenever possible:
+---
 
-- configs
-- notes
-- topology
-- troubleshooting
-- evidence
+## How to Navigate
 
-That way the work stays easy to review and consistent from one lab to the next.
+- Start with **Fundamentals** if you want to follow my learning path
+- Jump into **Featured Labs** for the strongest work
+- Review individual lab folders for full breakdowns and evidence
 
-* * *
+---
 
-## Portfolio Overview
+## Key Focus
 
-- [Lab Index](00-Portfolio-Overview/lab-index.md)
-- [Resume and Professional Links](00-Portfolio-Overview/resume-links.md)
-- [Skills Matrix](00-Portfolio-Overview/skills-matrix.md)
-
-* * *
-
-This repo will continue growing as I complete more labs and build out the portfolio with stronger evidence, cleaner documentation, and more advanced networking work.
+This portfolio is built to demonstrate:
+- Real configuration ability
+- Troubleshooting thinking
+- Consistent documentation
+- Growth over time
