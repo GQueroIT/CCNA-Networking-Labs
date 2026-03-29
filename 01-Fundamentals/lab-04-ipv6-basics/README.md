@@ -162,6 +162,8 @@ Working through these mistakes helped me better understand how IPv6 routing actu
 ### Routing Table (R2)
 ![R2 Routes](evidence/R2%20show%20route.png)
 
+> Note: Topology and troubleshooting screenshots are stored in their respective folders to maintain clean project structure.
+
 ---
 
 ## Key Takeaways
