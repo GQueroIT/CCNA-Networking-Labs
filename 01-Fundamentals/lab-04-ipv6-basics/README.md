@@ -14,7 +14,9 @@ PC1 connects to R1, PC2 connects to R2, and both routers are connected via a WAN
 
 ### Network Diagram
 
-![IPv6 Topology](topology/IPv6%20Topology.png)
+<p align="center">
+  <img src="./topology/ipv6-topology.png" alt="IPv6 Topology" width="700">
+</p>
 
 ## IPv6 Addressing Scheme
 
