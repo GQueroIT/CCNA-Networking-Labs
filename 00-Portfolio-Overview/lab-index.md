@@ -2,9 +2,9 @@
 
 ## Objective
 
-This page provides a structured overview of all labs within this repository. It serves as a quick reference to track progress, identify completed work, and outline upcoming labs as I continue developing my networking skills through hands-on practice in Cisco Packet Tracer.
+This page provides a structured overview of all networking labs within this repository. It serves as a centralized index for completed and in-progress work, showcasing hands-on experience with networking concepts, configuration, and troubleshooting in a lab-based environment.
 
-The goal is to maintain organization, consistency, and clear visibility into my learning progression.
+The goal is to maintain a clean, organized portfolio that demonstrates practical skills aligned with real-world IT and networking roles.
 
 ---
 
@@ -15,7 +15,7 @@ The goal is to maintain organization, consistency, and clear visibility into my 
 | Lab 01 | [IOS Basic Device Configuration](../01-Fundamentals/lab-01-ios-basic-device-config/) | ✅ Completed |
 | Lab 02 | [OSI & TCP/IP Model Analysis](../01-Fundamentals/lab-02-osi-and-tcp-ip-model/) | ✅ Completed |
 | Lab 03 | [IPv4 Subnetting](../01-Fundamentals/lab-03-ipv4-subnetting/) | ✅ Completed |
-| Lab 04 | IPv6 Basics | 🟡 Planned |
+| Lab 04 | [IPv6 Basics](../01-Fundamentals/lab-04-ipv6-basics/) | ✅ Completed |
 
 ---
 
