@@ -12,6 +12,10 @@ In this lab, I configured IPv6 addressing across multiple LANs and implemented i
 
 PC1 connects to R1, PC2 connects to R2, and both routers are connected via a WAN link.
 
+### Network Diagram
+
+![IPv6 Topology](topology/IPv6%20Topology.png)
+
 ## IPv6 Addressing Scheme
 
 - LAN 1: 2001:DB8:A:1::/64
