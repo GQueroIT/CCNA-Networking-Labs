@@ -148,7 +148,7 @@ Working through these mistakes helped me better understand how IPv6 routing actu
 ![PC1 Gateway Ping](evidence/PC1%20Ping%20to%20Gateway%20Success.png)
 
 ### End-to-End Communication (PC1 to PC2)
-![PC1 to PC2](evidence/PC1%20to%20PC2%20Communication.png)
+![PC1 to PC2](evidence/PC1%20to%20PC2%20Communcation.png)
 
 ### Routing Table (R1)
 ![R1 Routes](evidence/R1%20show%20route.png)
