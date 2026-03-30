@@ -2,6 +2,8 @@
 
 This section documents real issues encountered during the lab and the steps taken to identify and resolve them.
 
+---
+
 ## Issue 1: No Connectivity Across Switch Link
 
 ### Problem
