@@ -1,13 +1,13 @@
 # Lessons Learned
 
-In this lab, I learned how VLANs are used to segment a network at Layer 2 and how that segmentation directly impacts communication between devices.
+This lab helped me understand how VLANs actually behave in a real network instead of just reading about them conceptually.
 
-One of the biggest takeaways for me was understanding that devices in the same VLAN can communicate even when they are on different switches, as long as a trunk link is properly configured. Seeing PC1 successfully communicate with PC3 across the trunk helped reinforce how VLAN traffic is carried between switches.
+One of the biggest takeaways for me was seeing how VLANs separate broadcast domains at Layer 2. Even though devices are physically connected to the same switch, they cannot communicate unless they are in the same VLAN. That made the concept of segmentation much clearer.
 
-I also saw firsthand how VLANs isolate traffic. Devices in different VLANs were unable to communicate, which made it clear that VLANs act as separate broadcast domains. This helped me better understand why inter-VLAN routing is required for communication between VLANs.
+I also learned how important trunk links are when working with multiple switches. Without a properly configured trunk, VLAN traffic does not pass between switches, which completely breaks communication across the network. Verifying the trunk with `show interfaces trunk` became one of the first things I checked when something was not working.
 
-Another important lesson was the need for consistency across switches. VLANs must exist on both switches for proper operation across a trunk. Missing a VLAN can lead to connectivity issues that are not immediately obvious.
+Another thing that stood out to me was how easy it is to misconfigure access ports. Assigning a port to the wrong VLAN immediately causes connectivity issues, even if everything else is configured correctly. Using `show vlan brief` helped me quickly confirm whether ports were assigned properly.
 
-I also learned that proper labeling and documentation matter. At one point, I mislabeled a device, which caused confusion during testing. Fixing that showed me how important clear documentation is during troubleshooting.
+This lab also reinforced the importance of verification commands. Instead of guessing what might be wrong, I used commands like `show vlan brief`, `show interfaces trunk`, and basic ping testing to confirm exactly where the problem was.
 
-Overall, this lab strengthened my understanding of Layer 2 switching, VLAN behavior, and trunking, and it prepared me for the next step, which is inter-VLAN routing.
+Overall, this lab helped me move from just configuring commands to actually understanding how VLANs and trunking behave in a working network.
