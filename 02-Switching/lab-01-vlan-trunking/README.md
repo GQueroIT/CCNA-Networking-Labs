@@ -22,6 +22,8 @@ In this lab, I configured VLAN segmentation across two switches and implemented 
 
 The switches were connected using a trunk port so VLAN traffic could pass between them correctly.
 
+![VLAN Trunking Topology](topology/vlan-trunking-topology.png)
+
 ---
 
 ## VLAN Configuration
