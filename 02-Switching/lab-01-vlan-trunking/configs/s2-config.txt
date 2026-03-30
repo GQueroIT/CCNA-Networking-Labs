@@ -1,13 +1,22 @@
-hostname Switch
-!
-!
-!
-!
-!
-!
+hostname S2
+
+vlan 10
+ name SALES
+vlan 30
+ name IT
+
 spanning-tree mode pvst
 spanning-tree extend system-id
-!
+
 interface FastEthernet0/1
- switchport access vlan 10
  switchport mode access
+ switchport access vlan 10
+
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 30
+
+interface GigabitEthernet0/1
+ switchport mode trunk
+
+end
