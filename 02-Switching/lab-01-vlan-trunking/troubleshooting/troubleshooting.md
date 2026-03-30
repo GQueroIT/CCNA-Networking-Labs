@@ -1,21 +1,12 @@
-## Troubleshooting
+# Troubleshooting
 
-Detailed troubleshooting scenarios, including failures, fixes, and verification steps, are documented in the `troubleshooting` folder.
-
-This includes:
-- VLAN misconfiguration issues
-- Trunk configuration validation
-- End-to-end connectivity testing
-
----
-
-## Issue 1: No Connectivity Across the Switch Link
+## Issue 1: No Connectivity Across Switch Link
 
 ### Problem
-Devices that should have been able to communicate across the switch-to-switch connection were not passing traffic as expected.
+During initial testing, devices connected to different switches were unable to communicate even though they were assigned to the same VLAN.
 
 ### Cause
-The link between the switches was not functioning as a trunk, so VLAN traffic was not being carried correctly between switches.
+The link between the switches was not operating as a trunk, so VLAN traffic was not being carried between switches.
 
 ### Fix
 
@@ -27,15 +18,16 @@ switchport mode trunk
 show interfaces trunk
 
 Result:
-- The trunk link appeared in the trunk table
-- VLAN traffic was able to pass across the switch link
+- The trunk interface appeared in the output
+- VLAN traffic was successfully carried between switches
+- Devices in the same VLAN across switches were able to communicate
 
 ---
 
 ## Issue 2: Incorrect VLAN Assignment
 
 ### Problem
-A device could not communicate with the correct VLAN segment.
+A device was not able to communicate with other devices in the same VLAN.
 
 ### Cause
 The access port was assigned to the wrong VLAN.
@@ -51,23 +43,24 @@ switchport access vlan 10
 show vlan brief
 
 Result:
-- The port appeared under the correct VLAN
-- VLAN membership matched the intended design
+- The interface appeared under the correct VLAN
+- VLAN membership aligned with the topology
+- Communication was restored
 
 ---
 
-## Issue 3: End-to-End Connectivity Failure During Validation
+## Issue 3: Failed Connectivity During Validation
 
 ### Problem
-Initial connectivity testing did not work as expected during validation.
+End-to-end connectivity tests initially failed during validation.
 
 ### Cause
-The issue required validation of VLAN membership, trunk status, and device addressing to confirm where communication was failing.
+The issue required verification across multiple areas, including VLAN membership, trunk configuration, and device addressing.
 
 ### Fix
-The configuration was reviewed and corrected by checking:
-- VLAN assignments on access ports
-- Trunk operation between switches
+Reviewed and validated:
+- VLAN assignments on all access ports
+- Trunk configuration between switches
 - End-device IP configuration
 
 ### Verification
@@ -77,15 +70,15 @@ show interfaces trunk
 ping <destination-ip>
 
 Result:
-- VLAN membership matched the topology
-- Trunking was confirmed operational
-- Connectivity behavior matched the intended lab design
+- VLAN configuration matched across switches
+- Trunk was confirmed operational
+- Connectivity behaved as expected based on VLAN segmentation
 
 ---
 
 ## Lessons from Troubleshooting
 
-- Trunk verification should be one of the first checks when VLAN traffic fails across switches
-- Incorrect access port VLAN assignments can break communication quickly
-- End-to-end testing helps confirm whether the issue is with switching, VLAN membership, or host addressing
-- Verification commands are just as important as the configuration itself
+- Trunk configuration should be verified first when VLAN communication fails across switches
+- Incorrect VLAN assignments are a common cause of connectivity issues
+- End-to-end testing helps isolate whether the issue is Layer 2 or host configuration related
+- Verification commands are critical for identifying and confirming misconfigurations
