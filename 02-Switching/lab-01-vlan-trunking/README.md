@@ -70,6 +70,7 @@ Detailed troubleshooting notes are stored in the `troubleshooting` folder.
 - `notes/` - commands used, lessons learned, and verification summary
 - `topology/` - Packet Tracer file and topology image
 - `troubleshooting/` - troubleshooting notes and related lab artifacts
+- [Download Packet Tracer File](topology/lab-01-vlan-trunking.pkt)
 
 ---
 
