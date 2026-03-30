@@ -16,7 +16,7 @@ interface FastEthernet0/2
  switchport mode access
  switchport access vlan 30
 
-interface GigabitEthernet0/1
+interface FastEthernet0/3
  switchport mode trunk
 
 end
