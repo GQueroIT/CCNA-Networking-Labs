@@ -1,4 +1,11 @@
-# Troubleshooting
+## Troubleshooting
+
+Detailed troubleshooting scenarios, including failures, fixes, and verification steps, are documented in the `troubleshooting` folder.
+
+This includes:
+- VLAN misconfiguration issues
+- Trunk configuration validation
+- End-to-end connectivity testing
 
 ---
 
