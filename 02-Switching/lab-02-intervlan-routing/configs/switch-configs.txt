@@ -1,0 +1,23 @@
+! SW1 Configuration
+
+hostname SW1
+
+vlan 10
+vlan 20
+vlan 30
+
+interface GigabitEthernet0/1
+ switchport mode trunk
+
+---
+
+! SW2 Configuration
+
+hostname SW2
+
+vlan 10
+vlan 20
+vlan 30
+
+interface GigabitEthernet0/1
+ switchport mode trunk
