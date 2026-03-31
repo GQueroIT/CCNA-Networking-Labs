@@ -23,8 +23,8 @@ The goal is to maintain a clean, organized portfolio that demonstrates practical
 
 | Lab | Description | Status |
 |-----|------------|--------|
-| Lab 01 | VLAN Configuration | 🟡 Planned |
-| Lab 02 | Trunking | 🟡 Planned |
+| Lab 01 | [VLAN Configuration](../02-Switching/lab-01-vlan-trunking/) | ✅ Completed |
+| Lab 02 | [Trunking](../02-Switching/lab-02-intervlan-routing/) | ✅ Completed |
 | Lab 03 | Spanning Tree Protocol (STP) | 🟡 Planned |
 
 ---
