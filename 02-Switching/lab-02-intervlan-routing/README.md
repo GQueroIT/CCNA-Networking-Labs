@@ -78,6 +78,73 @@ The network was built to simulate a small enterprise environment where departmen
 
 ---
 
+## Configuration Explanation
+
+### Router (R1) - Inter-VLAN Routing
+
+This lab uses a Router-on-a-Stick configuration to enable communication between VLANs.
+
+- `GigabitEthernet0/0` is used as the trunk interface connecting to the switch.
+- Subinterfaces were created for each VLAN:
+  - `G0/0.10` → VLAN 10 (192.168.10.0/24)
+  - `G0/0.20` → VLAN 20 (192.168.20.0/24)
+  - `G0/0.30` → VLAN 30 (192.168.30.0/24)
+
+Each subinterface uses:
+
+- `encapsulation dot1Q <vlan-id>` to tag traffic for the correct VLAN
+- An IP address that serves as the default gateway for devices in that VLAN
+
+This allows the router to receive tagged frames from the switch and route traffic between VLANs.
+
+---
+
+### Switch Configuration (SW1 & SW2)
+
+The switches are responsible for VLAN segmentation and forwarding traffic appropriately.
+
+#### Access Ports
+
+- Ports connected to end devices were configured as access ports:
+  - `switchport mode access`
+  - Assigned to specific VLANs using `switchport access vlan <id>`
+
+This ensures devices are placed into the correct broadcast domain.
+
+#### Trunk Links
+
+- Trunk links were configured between:
+  - SW1 ↔ SW2
+  - SW1 ↔ Router
+
+Using:
+
+- `switchport mode trunk`
+
+Trunk ports carry traffic for multiple VLANs using 802.1Q tagging.
+
+---
+
+### VLAN Segmentation
+
+- VLAN 10 → Sales
+- VLAN 20 → HR
+- VLAN 30 → IT
+
+Each VLAN represents a separate network, requiring routing to communicate with other VLANs.
+
+---
+
+### Key Outcome
+
+After correct configuration:
+
+- Devices within the same VLAN communicate at Layer 2
+- Devices across VLANs communicate through the router at Layer 3
+- End-to-end connectivity was verified using ping tests
+
+---
+
 ## Verification
 
 I verified the lab by checking VLAN assignments, trunk status, router subinterfaces, and successful end-to-end communication between devices in different VLANs.
