@@ -30,7 +30,9 @@ In this lab, I configured multiple VLANs across an enterprise-style switched net
 
 The network was built to simulate a small enterprise environment where departments are separated into different VLANs but still require communication through a router.
 
-![Inter-VLAN Routing Topology](topology/intervlan-topology.png)
+<p align="center">
+  <img src="evidence/step-01-topology/intervlan-routing-topology.png" width="700">
+</p>
 
 ---
 
