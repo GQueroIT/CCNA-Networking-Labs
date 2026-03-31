@@ -1,23 +1,61 @@
+! =========================
 ! SW1 Configuration
+! =========================
 
 hostname SW1
 
-vlan 10
-vlan 20
-vlan 30
+spanning-tree mode pvst
+
+interface FastEthernet0/1
+ switchport access vlan 10
+ switchport mode access
+
+interface FastEthernet0/2
+ switchport access vlan 10
+ switchport mode access
+
+interface FastEthernet0/3
+ switchport access vlan 20
+ switchport mode access
+
+interface FastEthernet0/24
+ description trunk to SW2
+ switchport mode trunk
 
 interface GigabitEthernet0/1
  switchport mode trunk
 
----
+interface Vlan1
+ no ip address
+ shutdown
 
+
+! =========================
 ! SW2 Configuration
+! =========================
 
 hostname SW2
 
-vlan 10
-vlan 20
-vlan 30
+spanning-tree mode pvst
 
-interface GigabitEthernet0/1
+interface FastEthernet0/1
+ switchport access vlan 20
+ switchport mode access
+
+interface FastEthernet0/2
+ switchport access vlan 30
+ switchport mode access
+
+interface FastEthernet0/3
+ switchport access vlan 30
+ switchport mode access
+
+interface FastEthernet0/24
+ description trunk to SW1
  switchport mode trunk
+
+interface Vlan1
+ no ip address
+ shutdown
+
+end
