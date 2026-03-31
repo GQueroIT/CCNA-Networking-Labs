@@ -34,6 +34,10 @@ The network was built to simulate a small enterprise environment where departmen
   <img src="evidence/step-01-topology/intervlan-routing-topology.png" width="700">
 </p>
 
+Download the Packet Tracer file below to view the full lab:
+
+- [Download Topology](topology/topology.pkt)
+
 ---
 
 ## IP Addressing
