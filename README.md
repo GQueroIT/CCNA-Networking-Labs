@@ -23,10 +23,12 @@ Everything here is built with a focus on:
 
 ## Quick Highlights
 
-- Built multi-router IPv6 connectivity and verified end-to-end communication
-- Documented real troubleshooting steps with CLI outputs and screenshots
-- Practiced subnetting using CIDR and VLSM
-- Organized each lab with configs, evidence, topology, notes, and troubleshooting
+- Built VLAN segmentation and trunking across multiple switches
+- Implemented inter-VLAN routing using Router-on-a-Stick
+- Performed structured troubleshooting (Layer 1 → Layer 3 methodology)
+- Practiced subnetting using CIDR and VLSM in real scenarios
+- Verified connectivity using ping, ARP, and CLI diagnostics
+- Documented every lab with configs, outputs, and screenshots
 
 ---
 
@@ -45,6 +47,17 @@ while documenting everything clearly and professionally.
 
 ---
 
+## Core Skills Demonstrated
+
+- Network configuration and device setup
+- Switching (VLANs, trunking)
+- Routing fundamentals (inter-VLAN routing)
+- Troubleshooting methodology
+- CLI-based verification and diagnostics
+- Network documentation and lab structuring
+
+---
+
 ## Skills Demonstrated
 
 - IPv4 & IPv6 Addressing
@@ -60,29 +73,23 @@ while documenting everything clearly and professionally.
 
 ## Technologies Used
 
-- Cisco Packet Tracer
-- Cisco IOS CLI
-- Git and GitHub
-- Linux (Bash)
-- IPv4, IPv6, ICMP
+- Cisco IOS (Command Line Interface)
+- VLANs (Virtual Local Area Networks)
+- 802.1Q Trunking
+- Inter-VLAN Routing
+- IPv4 / IPv6
+- Subnetting (CIDR, VLSM)
+- Packet Tracer
+- Git & GitHub (Version Control)
 
 ---
 
 ## Featured Labs
 
-These labs represent my strongest hands-on work so far:
-
-- [Lab 01 - IOS Basic Device Configuration](./01-Fundamentals/lab-01-ios-basic-device-configuration)  
-  Built and verified a basic Cisco IOS configuration workflow for foundational device setup.
-
-- [Lab 02 - OSI & TCP/IP Model Analysis](./01-Fundamentals/lab-02-osi-and-tcp-ip-model)  
-  Documented protocol flow and packet movement across the OSI and TCP/IP models.
-
-- [Lab 03 - IPv4 Subnetting](./01-Fundamentals/lab-03-ipv4-subnetting)  
-  Practiced subnetting logic, address planning, and verification across multiple network ranges.
-
-- [Lab 04 - IPv6 Basics](./01-Fundamentals/lab-04-ipv6-basics)  
-  Configured IPv6 addressing, static routing, and verified end-to-end connectivity across routers.
+- 🔹 [Inter-VLAN Routing (Router-on-a-Stick)](02-Switching/lab-02-intervlan-routing/)
+- 🔹 [VLAN Trunking](02-Switching/lab-01-vlan-trunking/)
+- 🔹 [IPv4 Subnetting (VLSM)](01-Fundamentals/lab-03-subnetting/)
+- 🔹 [IPv6 Basics](01-Fundamentals/lab-04-ipv6-basics/)
 
 ---
 
