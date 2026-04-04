@@ -49,63 +49,43 @@ Each router was configured with routes pointing to the next-hop IP address to re
 
 ---
 
-## Evidence
+## Implementation Summary
 
-### Initial Connectivity Failure
+The lab was built using a three-router topology with two end networks. Static routes were configured on each router to enable communication between the networks.
 
-![ICMP Failure](evidence/01-icmp-failure-initial.png)
+PC1 and PC2 were configured with correct IP addressing and default gateways pointing to their respective routers. Router interfaces were assigned IP addresses based on point-to-point subnetting between each device.
 
-The initial ping attempt failed due to missing routing information and ARP resolution.
-
----
-
-### Successful Connectivity
-
-![ICMP Success](evidence/02-icmp-success.png)
-
-After proper configuration and ARP resolution, communication was successfully established.
+Static routes were then configured on each router to define paths to remote networks. Each route specified the destination network along with the correct next-hop IP address.
 
 ---
 
-### PC Configuration
+## Verification
 
-![PC1 Config](evidence/03-pc1-ip-configuration.png)  
-![PC1 Gateway](evidence/04-pc1-default-gateway.png)
+Connectivity was tested using ICMP (ping) between end devices.
 
-![PC2 Config](evidence/05-pc2-ip-configuration.png)  
-![PC2 Gateway](evidence/06-pc2-default-gateway.png)
+Initial testing resulted in a failed ping. This behavior was expected due to ARP (Address Resolution Protocol) not yet resolving the MAC address of the next-hop device. After ARP resolution completed, subsequent ping attempts were successful.
 
----
+Verification steps included:
 
-### Router Configuration
+- Confirming interface status with `show ip interface brief`  
+- Reviewing routing tables using `show ip route`  
+- Testing end-to-end connectivity using `ping`  
 
-#### R1
-
-![R1 Initial](evidence/07-r1-initial-configuration.png)  
-![R1 Link Setup](evidence/08-r1-point-to-point-link.png)  
-![R1 Fix](evidence/09-r1-corrected-configuration.png)  
-![R1 Running Config](evidence/10-r1-running-config.png)  
-![R1 Routing Table](evidence/11-r1-routing-table.png)
+Successful communication between PC1 and PC2 confirmed that routing was correctly configured across all routers.
 
 ---
 
-#### R2
+## Router Configuration Summary
 
-![R2 Setup](evidence/12-r2-initial-configuration.png)  
-![R2 Final](evidence/13-r2-final-configuration.png)  
-![R2 Routing](evidence/14-r2-routing-table.png)
+Each router was configured with:
 
----
+- Proper IP addressing on all interfaces  
+- Static routes pointing to remote networks  
+- Correct next-hop IP addresses for packet forwarding  
 
-#### R3
+Full configurations are available in:
 
-![R3 Setup](evidence/15-r3-initial-configuration.png)  
-![R3 Adjustments](evidence/16-r3-adjustments.png)  
-![R3 Issue](evidence/17-r3-connectivity-issue.png)  
-![R3 Route Added](evidence/18-r3-static-route-added.png)  
-![R3 Fix](evidence/19-r3-route-correction.png)  
-![R3 Final](evidence/20-r3-final-configuration.png)  
-![R3 Routing](evidence/21-r3-routing-table.png)
+configs/router-configs.txt
 
 ---
 
