@@ -127,3 +127,29 @@ The most important observation was that the first ping attempt may fail because 
 This lab reinforced how critical correct routing information is for network communication. Even a single incorrect static route can break connectivity across the entire topology. It also highlighted how Layer 2 and Layer 3 interact, specifically how ARP plays a role in initial communication attempts.
 
 Understanding static routing provides the foundation for more advanced routing protocols such as OSPF and EIGRP, where route learning becomes dynamic instead of manually configured.
+
+---
+
+## Lessons Learned
+
+This lab reinforced the importance of precision when working with static routing. Unlike dynamic routing protocols, static routes require complete accuracy in both destination networks and next-hop addresses. Even a minor misconfiguration can result in total loss of connectivity across the topology.
+
+One of the most important insights from this lab was observing how initial connectivity failures are not always caused by incorrect configurations, but rather by normal network behavior such as ARP resolution. The first ICMP request may fail while the device resolves the MAC address of the next-hop router, but subsequent attempts succeed once the ARP table is populated.
+
+Additionally, this lab strengthened my understanding of how routers build and rely on their routing tables to make forwarding decisions. Verifying routes using commands such as `show ip route` proved to be essential in identifying and correcting issues.
+
+---
+
+## What I Would Do Differently
+
+If I were to approach this lab again, I would take a more structured validation approach during configuration. Instead of configuring all devices first and testing at the end, I would verify connectivity incrementally after each major step.
+
+For example, I would:
+- Verify interface status and IP configuration immediately after setup  
+- Test point-to-point connectivity between routers before adding static routes  
+- Validate routing tables after each route is added  
+- Use targeted ping and traceroute tests to isolate issues faster  
+
+This approach would reduce troubleshooting time and make it easier to identify exactly where a failure occurs.
+
+Moving forward, I will apply this incremental validation method to all networking labs and real-world scenarios to improve efficiency and accuracy.
