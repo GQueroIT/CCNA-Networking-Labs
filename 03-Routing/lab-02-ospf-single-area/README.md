@@ -15,7 +15,9 @@ The objective of this lab was to implement Open Shortest Path First (OSPF) in a 
 
 This lab consists of three routers connected in a linear topology. Each router connects to its own LAN, and OSPF Area 0 is used across all routers.
 
-![OSPF Topology](topology/lab-02-ospf-single-area.png)
+<p align="center">
+  <img src="topology/lab-02-ospf-single-area.png" width="600">
+</p>
 
 ## IP Addressing
 
