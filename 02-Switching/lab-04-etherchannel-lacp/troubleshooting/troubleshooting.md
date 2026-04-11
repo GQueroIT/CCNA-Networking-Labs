@@ -1,3 +1,5 @@
+# Troubleshooting Steps
+
 During this lab, several potential issues were identified and validated to ensure proper EtherChannel functionality.
 
 One of the primary checks involved verifying that all interfaces participating in the EtherChannel were configured consistently. EtherChannel requires matching configurations across all member interfaces, including trunking mode, VLAN settings, and speed/duplex. Any mismatch would prevent the channel from forming correctly.
