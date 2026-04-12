@@ -1,0 +1,26 @@
+vlan 10
+ name SALES
+vlan 20
+ name HR
+vlan 30
+ name IT
+
+interface FastEthernet0/1
+ description PC1 - SALES
+ switchport mode access
+ switchport access vlan 10
+
+interface FastEthernet0/2
+ description PC2 - HR
+ switchport mode access
+ switchport access vlan 20
+
+interface FastEthernet0/3
+ description PC3 - IT
+ switchport mode access
+ switchport access vlan 30
+
+interface GigabitEthernet0/1
+ description TRUNK TO R1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30
