@@ -18,7 +18,7 @@ The objective of this lab is to configure inter-VLAN routing using a router-on-a
 ## Topology
 This lab consists of one router, one switch, and three end devices. Each PC is assigned to a different VLAN, and the switch is connected to the router using a trunk link.
 
-![Topology](./03-Routing/lab-03-router-on-a-stick-vlan-design/topology/router-on-a-stick-topology.png)
+![Topology](./topology/router-on-a-stick-topology.png)
 
 ---
 
