@@ -1,6 +1,6 @@
 # CCNA-Networking-Labs
 
-Hands-on networking lab portfolio focused on Cisco fundamentals, subnetting, routing, switching, troubleshooting, and clean technical documentation using Cisco Packet Tracer.
+Hands-on networking portfolio demonstrating real configuration, troubleshooting, and network design skills using Cisco technologies.
 
 ![Portfolio](https://img.shields.io/badge/Portfolio-Active-brightgreen)
 ![Focus](https://img.shields.io/badge/Focus-Networking-blue)
@@ -11,7 +11,9 @@ Hands-on networking lab portfolio focused on Cisco fundamentals, subnetting, rou
 
 ## Overview
 
-This repository documents my progression through networking concepts using real hands-on labs.
+This repository showcases hands-on networking labs built using Cisco Packet Tracer, focused on real-world configuration, verification, and troubleshooting.
+Rather than following step-by-step tutorials, each lab is approached as a practical implementation exercise, where I design, configure, test, and troubleshoot network environments.
+The goal is to demonstrate not just knowledge, but the ability to apply networking concepts in a structured and repeatable way.
 
 Everything here is built with a focus on:
 - Practical configuration (not just theory)
@@ -34,7 +36,9 @@ Everything here is built with a focus on:
 
 ## Objective
 
-The purpose of this repository is to document my networking progress in a way that is organized, easy to review, and focused on real hands-on work.
+The purpose of this repository is to document my progression toward becoming a network and infrastructure professional.
+I am building a strong foundation in switching, routing, and troubleshooting while developing the ability to design and implement structured network environments.
+Each lab is treated as a real-world scenario, with full configuration, validation, and documentation.
 
 My goal is to build strong fundamentals in:
 - Switching
@@ -49,12 +53,14 @@ while documenting everything clearly and professionally.
 
 ## Core Skills Demonstrated
 
-- Network configuration and device setup
-- Switching (VLANs, trunking)
-- Routing fundamentals (inter-VLAN routing)
-- Troubleshooting methodology
-- CLI-based verification and diagnostics
-- Network documentation and lab structuring
+- IPv4 & IPv6 addressing and subnetting (CIDR, VLSM)
+- VLAN segmentation and trunking (802.1Q)
+- Inter-VLAN routing (Router-on-a-Stick)
+- Static and dynamic routing concepts (OSPF in progress)
+- CLI-based configuration and verification (Cisco IOS)
+- Structured troubleshooting (Layer 1 → Layer 3 methodology)
+- Network topology design and implementation
+- Documentation with real configuration evidence
 
 ---
 
@@ -86,10 +92,25 @@ while documenting everything clearly and professionally.
 
 ## Featured Labs
 
-- 🔹 [Inter-VLAN Routing (Router-on-a-Stick)](02-Switching/lab-02-intervlan-routing/)
+These labs represent my strongest work and demonstrate core networking skills:
+
+- 🔹 [OSPF Multi-Area Design](03-Routing/lab-04-ospf-multi-area/)
+- 🔹 [Router-on-a-Stick (Inter-VLAN Routing)](02-Switching/lab-02-intervlan-routing/)
 - 🔹 [VLAN Trunking](02-Switching/lab-01-vlan-trunking/)
-- 🔹 [IPv4 Subnetting (VLSM)](01-Fundamentals/lab-03-subnetting/)
-- 🔹 [IPv6 Basics](01-Fundamentals/lab-04-ipv6-basics/)
+- 🔹 [IPv4 Subnetting (VLSM)](01-Fundamentals/lab-03-ipv4-subnetting/)
+- 🔹 [Spanning Tree Protocol (STP)](02-Switching/lab-03-stp-basics/)
+
+---
+
+## What This Portfolio Proves
+
+- I can configure real network devices using Cisco CLI
+- I understand how VLANs, routing, and protocols interact
+- I can troubleshoot connectivity issues methodically
+- I document configurations and results clearly
+- I can build and validate complete network topologies
+
+This repository reflects hands-on ability, not just theoretical knowledge.
 
 ---
 
@@ -126,12 +147,14 @@ Each lab includes:
 
 ## Progression
 
-This repository is actively being built as I continue studying for:
-- CCNA (200-301)
-- Network+
-- Future cloud and security certifications
+This repository is continuously evolving as I advance through networking topics:
 
-New labs are added regularly with increasing complexity.
+- Foundations → Device configuration, OSI model, subnetting
+- Switching → VLANs, trunking, STP
+- Routing → Static routing, inter-VLAN routing, OSPF
+- Next → Network services, security, and advanced troubleshooting
+
+Each phase builds on the previous one to reinforce real-world understanding.
 
 ---
 
