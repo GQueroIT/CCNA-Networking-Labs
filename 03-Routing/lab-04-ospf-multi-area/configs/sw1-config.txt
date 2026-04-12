@@ -1,0 +1,12 @@
+hostname SW1
+
+vlan 10
+ name IT
+
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 10
+
+interface GigabitEthernet0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20
