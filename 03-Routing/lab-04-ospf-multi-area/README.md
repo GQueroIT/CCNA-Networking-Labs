@@ -17,7 +17,7 @@ The objective of this lab is to design and implement a multi-area OSPF topology 
 
 ## Topology
 
-![Topology](./topology/ospf-routing-topology.pkt)
+![Topology](./topology/ospf-routing-topology.png)
 
 ---
 
