@@ -21,6 +21,8 @@ The goal of this lab is to configure static routing with a primary path and a ba
 
 This lab uses a multi-path routed topology with two possible paths between the source and destination networks.
 
+![Lab Topology](./topology/lab-05-topology.png)
+
 Primary Path:
 R1 → R2 → R4
 
