@@ -69,7 +69,7 @@ Key skills developed:
 | Lab 02 | [OSPF Single Area](../03-Routing/lab-02-ospf-single-area/) | ✅ Completed |
 | Lab 03 | [Router-on-a-Stick VLAN Design](../03-Routing/lab-03-router-on-a-stick-vlan-design/) | ✅ Completed |
 | Lab 04 | [OSPF Multi-Area Design](../03-Routing/lab-04-ospf-multi-area/) | ✅ Completed |
-| Lab 05 | [Default and Floating Static Routes](../03-Routing/lab-05-default-and-floating-static-routes/) | 🟡 Planned |
+| Lab 05 | [Default and Floating Static Routes](../03-Routing/lab-05-default-and-floating-static-routes/) | ✅ Completed |
 | Lab 06 | [Route Redistribution](../03-Routing/lab-06-route-redistribution/) | 🟡 Planned |
 | Lab 07 | [Routing Troubleshooting](../03-Routing/lab-07-routing-troubleshooting/) | 🟡 Planned |
 | Lab 08 | [Inter-VLAN Routing (3-Switch Topology)](../03-Routing/lab-08-inter-vlan-l3-switch/) | 🟡 Planned |
