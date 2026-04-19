@@ -1,0 +1,17 @@
+hostname R4
+
+interface GigabitEthernet0/0
+ ip address 10.0.0.10 255.255.255.252
+ no shutdown
+
+interface GigabitEthernet0/1
+ description link to vlan 20
+ no shutdown
+
+interface GigabitEthernet0/1.20
+ encapsulation dot1Q 20
+ ip address 10.20.20.1 255.255.255.0
+
+router ospf 1
+ network 10.0.0.8 0.0.0.3 area 1
+ network 10.20.20.0 0.0.0.255 area 1

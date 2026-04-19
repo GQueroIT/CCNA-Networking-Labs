@@ -1,0 +1,18 @@
+hostname SW1
+interface Port-channel1
+ switchport mode trunk
+interface FastEthernet0/1
+ switchport access vlan 10
+ switchport mode access
+interface FastEthernet0/2
+ switchport access vlan 20
+ switchport mode access
+interface FastEthernet0/3
+ switchport mode trunk
+ channel-group 1 mode active
+interface FastEthernet0/4
+ switchport mode trunk
+ channel-group 1 mode active
+interface FastEthernet0/5
+ switchport mode trunk
+ channel-group 1 mode active

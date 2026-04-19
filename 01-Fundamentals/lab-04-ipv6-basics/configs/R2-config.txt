@@ -1,0 +1,13 @@
+hostname R2
+
+ipv6 unicast-routing
+
+interface GigabitEthernet0/0
+ ipv6 address 2001:DB8:A:2::1/64
+ no shutdown
+
+interface GigabitEthernet0/1
+ ipv6 address 2001:DB8:A:12::2/64
+ no shutdown
+
+ipv6 route 2001:DB8:A:1::/64 2001:DB8:A:12::1

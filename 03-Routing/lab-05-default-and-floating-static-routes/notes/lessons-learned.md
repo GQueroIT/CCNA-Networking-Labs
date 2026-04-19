@@ -1,0 +1,11 @@
+# Lessons Learned
+
+This lab reinforced the importance of understanding how routing decisions are actually made inside a network, rather than just configuring routes to achieve connectivity. Initially, it can feel like static routing is simply about making sure every router knows how to reach every network, but this lab demonstrated that proper design requires controlling where decisions are made and how traffic flows during both normal operation and failure conditions.
+
+One of the biggest takeaways was the role of administrative distance in determining route preference. By configuring two static routes to the same destination with different administrative distances, I was able to create a primary path and a backup path. The floating static route does not appear in the routing table unless the primary route becomes unavailable, which highlights how the router selects the most trusted path rather than installing every possible route.
+
+Another important concept that became clear during this lab was symmetric routing. When the forward path and return path do not match, the network can experience inconsistent connectivity, including partial packet loss. I observed this behavior during testing when traffic was taking one path in the forward direction and a different path on the return. Correcting this by implementing matching primary and floating routes on both edge routers ensured consistent and reliable communication.
+
+This lab also demonstrated real network behavior during failover. When the primary link was shut down, there was a brief moment of packet loss before traffic successfully switched to the backup path. This convergence behavior is expected in real-world networks and helped me understand that a small amount of packet loss during failover is normal and not a sign of misconfiguration.
+
+This lab strengthened my understanding of route selection, failover design, and traffic flow. Instead of simply achieving connectivity, I was able to design a network that intelligently adapts to failure conditions while maintaining reliable communication between endpoints.
