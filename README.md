@@ -69,12 +69,13 @@ These projects showcase how I approach network design, validation, and troublesh
 ---
 
 ## Tools & Technologies
-
-- Cisco Packet Tracer  
-- Cisco IOS CLI  
-- Networking protocols (OSPF, VLANs, STP)  
-- IPv4/IPv6 addressing  
-- Git & GitHub  
+- Windows Server (Active Directory Domain Services)
+- Windows 10/11 Client
+- VirtualBox
+- PowerShell
+- DNS
+- Group Policy Management
+- RSAT (Remote Server Administration Tools)
 
 ---
 
@@ -143,14 +144,14 @@ screenshots/
 
 ---
 
-## Skills Demonstrated
-
-- Network design and topology planning  
-- VLAN configuration and inter-VLAN routing  
-- Routing protocols (Static, OSPF)  
-- CLI-based configuration and verification  
-- Structured network troubleshooting (Layer 1–3)  
-- Documentation and validation of network environments  
+  ## Skills Demonstrated
+- Active Directory deployment and administration
+- User and group management (AGDLP model)
+- Group Policy configuration and enforcement
+- DNS troubleshooting and domain authentication
+- Role-based access control and permissions
+- Security policy implementation and auditing
+- Structured troubleshooting across systems and services
 
 ---
 
