@@ -10,9 +10,9 @@
   <img src="https://img.shields.io/badge/GitHub-Portfolio-black?logo=github&logoColor=white" />
 </p>
 
-This repository represents my hands-on progression toward building real-world network infrastructure. What started as individual labs has evolved into a structured environment where I design, configure, and troubleshoot networks the way they would be approached in a production setting.
+This repository documents my hands-on progression in building and troubleshooting network infrastructure. What began as individual labs has evolved into a structured environment where I design, configure, and validate networks using real-world methodologies.
 
-This is not just a collection of labs.  
+This is not just a collection of labs.
 It is the foundation of how I approach infrastructure.
 
 ---
@@ -21,10 +21,10 @@ It is the foundation of how I approach infrastructure.
 
 If you are reviewing this repository, here is the best way to navigate it:
 
-- Start with **00-Portfolio-Overview** for a high-level breakdown  
-- Review **Featured Implementations** below for my strongest work  
+- Start with 00-Portfolio-Overview for a high-level breakdown  
+- Review Featured Implementations below for my strongest work  
 - Explore individual lab folders for full configurations, verification, and troubleshooting  
-- Check the **90-Assets** folder for configs, diagrams, and supporting documentation  
+- Check the 90-Assets folder for configs, diagrams, and supporting documentation  
 
 Each lab is structured to reflect a real-world workflow:
 
@@ -68,6 +68,16 @@ These projects showcase how I approach network design, validation, and troublesh
 
 ---
 
+## Tools & Technologies
+
+- Cisco Packet Tracer  
+- Cisco IOS CLI  
+- Networking protocols (OSPF, VLANs, STP)  
+- IPv4/IPv6 addressing  
+- Git & GitHub  
+
+---
+
 ## Key Capabilities Demonstrated
 
 - IPv4 and IPv6 addressing (CIDR, VLSM)  
@@ -85,9 +95,9 @@ These projects showcase how I approach network design, validation, and troublesh
 
 Every issue is approached methodically:
 
-1. Layer 1 – Physical  
-2. Layer 2 – Switching  
-3. Layer 3 – Routing  
+- Layer 1 – Physical  
+- Layer 2 – Switching  
+- Layer 3 – Routing  
 
 This structured approach allows me to isolate issues efficiently and avoid guesswork.
 
@@ -129,7 +139,18 @@ diagrams/
 resume/  
 screenshots/  
 
-99-Templates/
+99-Templates/  
+
+---
+
+## Skills Demonstrated
+
+- Network design and topology planning  
+- VLAN configuration and inter-VLAN routing  
+- Routing protocols (Static, OSPF)  
+- CLI-based configuration and verification  
+- Structured network troubleshooting (Layer 1–3)  
+- Documentation and validation of network environments  
 
 ---
 
@@ -149,3 +170,7 @@ screenshots/
 - Improving troubleshooting speed and consistency  
 - Refining documentation to align with real-world standards  
 - Expanding into network services and security  
+
+---
+
+This repository reflects my ability to approach networking problems methodically, document solutions clearly, and build environments that simulate real-world enterprise scenarios.
