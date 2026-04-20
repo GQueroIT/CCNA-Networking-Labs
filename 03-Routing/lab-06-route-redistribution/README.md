@@ -1,9 +1,5 @@
 # Lab 06 - Route Redistribution
 
-![Topology](./evidence/01-topology-overview.png)
-
----
-
 ## Objective
 
 In this lab, I implemented route redistribution between two different routing protocols to allow communication across separate routing domains.
@@ -26,6 +22,8 @@ This lab demonstrates how a router can function as a boundary between routing pr
 ---
 
 ## Topology Overview
+
+![Topology](./evidence/01-topology-overview.png)
 
 The network consists of two routing domains connected through a redistribution router.
 
