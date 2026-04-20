@@ -1,0 +1,14 @@
+hostname R4
+
+interface GigabitEthernet0/0
+ ip address 10.0.34.2 255.255.255.252
+ no shutdown
+
+interface GigabitEthernet0/1
+ ip address 192.168.40.1 255.255.255.0
+ no shutdown
+
+router eigrp 100
+ no auto-summary
+ network 10.0.34.0 0.0.0.3
+ network 192.168.40.0 0.0.0.255
