@@ -1,162 +1,194 @@
 # Lab 06 - Route Redistribution
 
+![Topology](./evidence/01-topology-overview.png)
+
+---
+
 ## Objective
-This lab demonstrates how to connect two separate routing domains by using route redistribution on a boundary router. On the left side of the topology, OSPF was used to advertise internal networks across R1, R2, and R3. On the right side, EIGRP was used between R3 and R4. The main objective was to configure R3 to redistribute routes between both protocols so that full end-to-end communication could take place across the topology.
+
+In this lab, I implemented route redistribution between two different routing protocols to allow communication across separate routing domains.
+
+The OSPF domain (R1–R2–R3) and the EIGRP domain (R3–R4) were initially isolated. By configuring redistribution on R3, I enabled bidirectional route exchange, allowing full end-to-end communication between both sides of the network.
+
+This lab demonstrates how a router can function as a boundary between routing protocols and translate routing information between them.
 
 ---
 
 ## Technologies Used
-- Cisco Packet Tracer
-- OSPF
-- EIGRP
-- Route Redistribution
-- Loopback Interface
-- CLI Verification and Troubleshooting
+
+- Cisco Packet Tracer  
+- OSPF (Open Shortest Path First)  
+- EIGRP (Enhanced Interior Gateway Routing Protocol)  
+- Route Redistribution  
+- Loopback Interfaces  
+- CLI Verification and Troubleshooting  
 
 ---
 
-## Topology
-The topology was built with four routers and two endpoints.
+## Topology Overview
 
-- R1 represented the OSPF-side edge router with a local LAN
-- R2 acted as an internal OSPF router and also hosted a loopback network
-- R3 acted as the redistribution router between OSPF and EIGRP
-- R4 represented the EIGRP-side edge router with a local LAN
-- PC1 was placed behind R1
-- PC2 was placed behind R4
+The network consists of two routing domains connected through a redistribution router.
 
-### Topology Flow
-PC1 -> R1 -> R2 -> R3 -> R4 -> PC2
+- **OSPF Domain:** R1, R2, R3  
+- **EIGRP Domain:** R3, R4  
+- **Boundary Router:** R3  
+- **Endpoints:** PC1 (OSPF side), PC2 (EIGRP side)
+
+### Traffic Flow
+
+PC1 → R1 → R2 → R3 → R4 → PC2
 
 ---
 
 ## IP Addressing Plan
 
-| Device | Interface | IP Address | Subnet Mask |
-|---|---|---:|---:|
-| PC1 | NIC | 192.168.10.10 | 255.255.255.0 |
-| R1 | G0/0 | 192.168.10.1 | 255.255.255.0 |
-| R1 | G0/1 | 10.0.12.1 | 255.255.255.252 |
-| R2 | G0/0 | 10.0.12.2 | 255.255.255.252 |
-| R2 | G0/1 | 10.0.23.1 | 255.255.255.252 |
-| R2 | Lo0 | 192.168.20.1 | 255.255.255.0 |
-| R3 | G0/0 | 10.0.23.2 | 255.255.255.252 |
-| R3 | G0/1 | 10.0.34.1 | 255.255.255.252 |
-| R4 | G0/0 | 10.0.34.2 | 255.255.255.252 |
-| R4 | G0/1 | 192.168.40.1 | 255.255.255.0 |
-| PC2 | NIC | 192.168.40.10 | 255.255.255.0 |
-
-### Default Gateways
-- PC1 -> 192.168.10.1
-- PC2 -> 192.168.40.1
+| Device | Interface | IP Address | Subnet |
+|--------|----------|------------|--------|
+| PC1 | NIC | 192.168.10.10 | /24 |
+| R1 | G0/0 | 192.168.10.1 | /24 |
+| R1 | G0/1 | 10.0.12.1 | /30 |
+| R2 | G0/0 | 10.0.12.2 | /30 |
+| R2 | G0/1 | 10.0.23.1 | /30 |
+| R2 | Lo0 | 192.168.20.1 | /24 |
+| R3 | G0/0 | 10.0.23.2 | /30 |
+| R3 | G0/1 | 10.0.34.1 | /30 |
+| R4 | G0/0 | 10.0.34.2 | /30 |
+| R4 | G0/1 | 192.168.40.1 | /24 |
+| PC2 | NIC | 192.168.40.10 | /24 |
 
 ---
 
 ## Routing Design
 
 ### OSPF Domain
-OSPF process 1 was used across the left side of the topology:
+
+Configured across:
 - R1
 - R2
-- R3 interface facing R2
+- R3 (left-facing interface)
 
-The OSPF domain advertised:
-- 192.168.10.0/24
-- 192.168.20.0/24
-- 10.0.12.0/30
-- 10.0.23.0/30
-
-### EIGRP Domain
-EIGRP autonomous system 100 was used across the right side of the topology:
-- R3 interface facing R4
-- R4
-
-The EIGRP domain advertised:
-- 10.0.34.0/30
-- 192.168.40.0/24
-
-### Redistribution Point
-R3 served as the routing boundary between both protocols. Redistribution was configured in both directions so that:
-- OSPF routes were injected into EIGRP
-- EIGRP routes were injected into OSPF
+Advertised networks:
+- 192.168.10.0/24  
+- 192.168.20.0/24  
+- 10.0.12.0/30  
+- 10.0.23.0/30  
 
 ---
 
-## Configuration Summary
+### EIGRP Domain
 
-### R1
-- Configured local LAN interface for PC1
-- Configured transit link to R2
-- Enabled OSPF for the LAN and transit network
+Configured across:
+- R3 (right-facing interface)
+- R4
 
-### R2
-- Configured both transit interfaces
-- Created Loopback0 to simulate an additional internal LAN
-- Advertised all connected OSPF networks
+Advertised networks:
+- 10.0.34.0/30  
+- 192.168.40.0/24  
 
-### R3
-- Participated in both OSPF and EIGRP
-- Formed the redistribution boundary
-- Redistributed EIGRP into OSPF
-- Redistributed OSPF into EIGRP using an explicit metric
+---
 
-### R4
-- Configured transit link to R3
-- Configured local LAN interface for PC2
-- Enabled EIGRP for the transit and LAN networks
+### Redistribution (R3)
+
+R3 acts as the boundary router and performs bidirectional redistribution:
+
+- OSPF routes injected into EIGRP  
+- EIGRP routes injected into OSPF  
+
+This allows both routing domains to learn each other’s internal networks.
 
 ---
 
 ## Verification
-The following verification steps were used to confirm successful operation:
 
-### Neighbor Verification
-- `show ip ospf neighbor`
-- `show ip eigrp neighbors`
+### Neighbor Relationships
 
-### Routing Table Verification
-- `show ip route`
-- `show ip route ospf`
-- `show ip route eigrp`
+- `show ip ospf neighbor`  
+- `show ip eigrp neighbors`  
 
-### End-to-End Testing
-- Successful ping from PC1 to PC2
-- Successful reachability across the redistribution boundary
-- Traceroute confirmed the expected traffic path through the routed topology
+---
+
+### Routing Tables
+
+- `show ip route`  
+- Verified that:
+  - R1 learned 192.168.40.0  
+  - R4 learned OSPF-side networks  
+
+---
+
+### End-to-End Connectivity
+
+Before redistribution:
+- Traffic failed between PC1 and PC2  
+
+After redistribution:
+- Successful ping between PC1 and PC2  
+- Full reachability across both routing domains  
+
+---
+
+### Path Verification
+
+Traceroute confirms correct traffic flow:
+
+PC1 → R1 → R2 → R3 → R4 → PC2
 
 ---
 
 ## Evidence
-The `evidence` folder should include screenshots that validate the major stages of the lab, such as:
-- Topology overview
-- OSPF configuration
-- Loopback configuration on R2
-- EIGRP configuration on R4
-- Redistribution configuration on R3
-- Routing tables after redistribution
-- Successful ping between endpoints
-- Traceroute across the topology
+
+All validation screenshots are located in the `evidence` folder, including:
+
+- Topology overview  
+- OSPF configuration  
+- Loopback setup  
+- EIGRP configuration  
+- Redistribution configuration  
+- Routing table verification  
+- Failed connectivity (pre-redistribution)  
+- Successful connectivity (post-redistribution)  
+- Traceroute path  
 
 ---
 
-## Troubleshooting Notes
-During validation, connectivity from PC1 to the remote endpoint initially failed even though the OSPF side of the topology was operating correctly. This was expected because both routing domains were still isolated from one another. The issue was resolved by configuring bidirectional route redistribution on R3.
+## Troubleshooting Summary
 
-This lab reinforced the importance of validating each routing domain independently before troubleshooting end-to-end failures across the redistribution boundary.
+Initial connectivity testing showed that both routing domains were functioning independently, but traffic could not cross between them.
+
+This was expected because route redistribution had not yet been configured. Once redistribution was implemented on R3, both domains successfully exchanged routes and full connectivity was established.
+
+This reinforced the importance of validating each routing domain individually before troubleshooting inter-domain communication.
 
 ---
 
-## Files
-- `README.md`
-- `configs/r1-config.txt`
-- `configs/r2-config.txt`
-- `configs/r3-config.txt`
-- `configs/r4-config.txt`
-- `notes/lessons-learned.md`
-- `troubleshooting/troubleshooting.md`
-- `topology/lab-06-route-redistribution.pkt`
+## Key Takeaways
+
+- Route redistribution enables communication between different routing protocols  
+- Each router should only advertise its own directly connected networks  
+- EIGRP requires a metric during redistribution  
+- OSPF requires the `subnets` keyword for proper route injection  
+- Loopback interfaces are useful for simulating additional networks  
+- End-to-end validation is critical in confirming full network functionality  
 
 ---
 
 ## What This Lab Demonstrates
-This lab demonstrates that I can build separate routing domains, configure a boundary router that participates in multiple routing protocols, implement bidirectional route redistribution, and verify end-to-end traffic flow across the network. It also shows that I can troubleshoot routing problems logically by isolating protocol domains before applying the final redistribution configuration.
+
+This lab demonstrates my ability to:
+
+- Design multi-protocol routing environments  
+- Configure OSPF and EIGRP routing domains  
+- Implement bidirectional route redistribution  
+- Validate routing behavior using CLI tools  
+- Troubleshoot connectivity across protocol boundaries  
+- Document network builds in a structured, professional format  
+
+---
+
+## Files
+
+- configs/  
+- evidence/  
+- notes/lessons-learned.md  
+- troubleshooting/troubleshooting.md  
+- topology/lab-06-route-redistribution.pkt  
