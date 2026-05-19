@@ -1,0 +1,24 @@
+========================================
+Lab 01 - DHCP Services
+Device: SW2
+Role: Secondary Access Switch
+========================================
+
+hostname SW2
+
+vlan 10
+ name Sales
+
+vlan 20
+ name HR
+
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 10
+
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 20
+
+interface GigabitEthernet0/2
+ switchport mode trunk

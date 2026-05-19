@@ -1,0 +1,27 @@
+========================================
+Lab 01 - DHCP Services
+Device: SW1
+Role: Core Access Switch
+========================================
+
+hostname SW1
+
+vlan 10
+ name Sales
+
+vlan 20
+ name HR
+
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 10
+
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 20
+
+interface GigabitEthernet0/1
+ switchport mode trunk
+
+interface GigabitEthernet0/2
+ switchport mode trunk
